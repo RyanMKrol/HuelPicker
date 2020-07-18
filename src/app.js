@@ -1,7 +1,7 @@
 import schedule from 'node-schedule';
 import MailSender from 'noodle-email';
 
-import gmailCredentials from '../credentials/GmailCredentials.json';
+import gmailCredentials from '../credentials/gmail.json';
 
 const mailClient = new MailSender(gmailCredentials);
 
