@@ -9,5 +9,5 @@ git pull
 npm install
 npm run build
 pm2 delete HuelPicker
-pm2 start build/src/app.js --name HuelPicker
+pm2 start build/app.js --name HuelPicker
 pm2 save
