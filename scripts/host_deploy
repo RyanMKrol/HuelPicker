@@ -1,0 +1,13 @@
+AES_PASS=$1
+
+cd ~
+rm -rf HuelPicker
+git clone https://github.com/RyanMKrol/HuelPicker.git
+cd HuelPicker
+openssl aes-256-cbc -d -a -in credentials/gmail.json.enc -out credentials/gmail.json -k $AES_PASS
+git pull
+npm install
+npm run build
+pm2 delete HuelPicker
+pm2 start build/src/app.js --name HuelPicker
+pm2 save
