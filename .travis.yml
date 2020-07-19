@@ -3,7 +3,7 @@ node_js:
   - 13.3.0
 script: echo "Testing temporarily disabled"
 before_install:
-  - npm i -g noodle-deploy
+  - npm install
 deploy:
   provider: script
   script: npm run deploy -- -s $AES_PASS
