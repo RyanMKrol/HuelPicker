@@ -18,7 +18,7 @@ echo "Attempting to install noodle-deploy";
 npm install noodle-deploy;
 
 echo "Attempting to see what my node packages are";
-ls -l node_modules;
+sudo ls -l node_modules;
 
 echo "Now Trying to use noodle-deploy";
 sudo ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
