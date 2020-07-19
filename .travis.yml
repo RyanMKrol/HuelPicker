@@ -6,7 +6,7 @@ before_install:
   - npm i -g noodle-deploy
 deploy:
   provider: script
-  script: bash scripts/deploy $AES_PASS
+  script: npm run deploy -- -s $AES_PASS
   on:
     branch: master
 branches:
