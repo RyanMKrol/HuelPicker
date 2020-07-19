@@ -1,13 +1,24 @@
 sudo apt-get update;
 sudo apt-get install nodejs;
 sudo apt-get install npm;
-echo "Announcing version of Node";
+
+echo "Announcing version of Nodejs";
 nodejs -v;
+
 echo "Announcing version of npm";
 npm -v;
+
+echo "Linking nodejs to node";
+ln -s /usr/bin/nodejs /usr/bin/node
+
+echo "Announcing version of Node";
+nodejs -v;
+
 echo "Attempting to install noodle-deploy";
 npm install noodle-deploy;
+
 echo "Attempting to see what my node packages are";
 ls -l node_modules;
+
 echo "Now Trying to use noodle-deploy";
 sudo ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
