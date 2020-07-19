@@ -1,4 +1,4 @@
 echo "Announcing version of node";
 node --version;
 npm install noodle-deploy;
-sudo node ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
+sudo "$(which node)" ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
