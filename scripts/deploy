@@ -1,6 +1,8 @@
-sudo apt-get update;
-sudo apt-get install nodejs;
-sudo apt-get install npm;
+sudo apt update;
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates;
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -;
+
+sudo apt -y install nodejs;
 
 echo "Announcing version of Nodejs";
 nodejs -v;
@@ -8,14 +10,11 @@ nodejs -v;
 echo "Announcing version of npm";
 npm -v;
 
-echo "Linking nodejs to node";
-ln -s /usr/bin/nodejs /usr/bin/node
-
 echo "Announcing version of Node";
-nodejs -v;
+node -v;
 
 echo "Attempting to install noodle-deploy";
 npm install noodle-deploy;
 
 echo "Now Trying to use noodle-deploy";
-sudo nodejs ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
+sudo node ./node_modules/noodle-deploy/build/index.js -s $AES_PASS -p HuelPicker -t "build/app.js";
