@@ -1,2 +1,1 @@
-npm install -g noodle-deploy;
-sudo npx noodle-deploy -s $AES_PASS -p HuelPicker -t "build/app.js";
+sudo noodle-deploy -s $AES_PASS -p HuelPicker -t "build/app.js";

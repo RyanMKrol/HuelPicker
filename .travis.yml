@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - 13.3.0
 script: echo "Testing temporarily disabled"
+before_install:
+  - npm i -g noodle-deploy
 deploy:
   provider: script
   script: bash scripts/deploy $AES_PASS
@@ -9,5 +11,5 @@ deploy:
     branch: master
 branches:
   only:
-  - master
-  - development
+    - master
+    - development
