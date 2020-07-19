@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - 13.3.0
 script: echo "Testing temporarily disabled"
-before_install:
+install:
   - npm install
 deploy:
   provider: script
