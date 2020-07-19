@@ -2,11 +2,9 @@ language: node_js
 node_js:
   - 13.3.0
 script: echo "Testing temporarily disabled"
-install:
-  - npm install
 deploy:
   provider: script
-  script: npm run deploy -- -s $AES_PASS
+  script: bash scripts/deploy $AES_PASS
   on:
     branch: master
 branches:
