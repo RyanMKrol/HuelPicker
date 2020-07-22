@@ -17,7 +17,6 @@ const FLAVOURS = [
   'Peanut Butter',
   'Gingerbread',
   'Chocolate Cherry',
-  'Mint-Chocolate',
   'Berry',
   'Mocha',
   'Pumpkin Spice',
