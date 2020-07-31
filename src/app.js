@@ -23,7 +23,7 @@ function generateIndicesFromArray(array) {
   return indicesSet;
 }
 
-schedule.scheduleJob('0 0 8 * * *', async () => {
+schedule.scheduleJob('0 0 7 * * *', async () => {
   try {
     const indicesArray = Array.from(generateIndicesFromArray(FLAVOURS));
     const flavours = indicesArray.map((index) => FLAVOURS[index]);
