@@ -2,29 +2,12 @@ import schedule from 'node-schedule';
 import MailSender from 'noodle-email';
 
 import gmailCredentials from '../credentials/gmail.json';
+import { FLAVOURS } from './constants/constants';
 
 const mailClient = new MailSender(gmailCredentials);
 
 mailClient.setFrom('"HuelPicker" <ryankrol.m@gmail.com>');
 mailClient.setTo('ryankrol.m@gmail.com');
-
-const FLAVOURS = [
-  'Salted Caramel',
-  'Strawberry',
-  'Banana',
-  'Apple Cinnamon',
-  'Chocolate',
-  'Peanut Butter',
-  'Gingerbread',
-  'Chocolate Cherry',
-  'Mint-Chocolate',
-  'Berry',
-  'Mocha',
-  'Pumpkin Spice',
-  'Vanilla',
-  'Rhubarb and Custard',
-  'Toffee',
-];
 
 function randomNumber(max) {
   return Math.floor(Math.random() * max);
