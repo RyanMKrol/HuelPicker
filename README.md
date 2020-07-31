@@ -9,7 +9,6 @@ Every morning at 8am, I'll get an email which will pick 5 unique items from:
 - Banana
 - Apple Cinnamon
 - Chocolate
-- Peanut Butter
 - Gingerbread
 - Chocolate Cherry
 - Mint-Chocolate

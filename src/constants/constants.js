@@ -4,7 +4,6 @@ export const FLAVOURS = [
   'Banana',
   'Apple Cinnamon',
   'Chocolate',
-  'Peanut Butter',
   'Gingerbread',
   'Chocolate Cherry',
   'Mint-Chocolate',
