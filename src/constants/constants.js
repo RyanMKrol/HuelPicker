@@ -1,7 +1,7 @@
 export const FLAVOURS = [
   'Salted Caramel',
   'Strawberry',
-  'Banana',
+  // 'Banana',
   'Apple Cinnamon',
   'Chocolate',
   'Gingerbread',
@@ -9,9 +9,9 @@ export const FLAVOURS = [
   'Berry',
   'Mocha',
   'Pumpkin Spice',
-  'Vanilla',
-  'Rhubarb and Custard',
-  'Toffee',
+  // 'Vanilla',
+  // 'Rhubarb and Custard',
+  // 'Toffee',
 ];
 
 export const README_TEMPLATE_LOCATION = `${__dirname}/../templates/README.md`;

@@ -6,7 +6,6 @@ Every morning at 8am, I'll get an email which will pick 5 unique items from:
 
 - Salted Caramel
 - Strawberry
-- Banana
 - Apple Cinnamon
 - Chocolate
 - Gingerbread
@@ -14,6 +13,3 @@ Every morning at 8am, I'll get an email which will pick 5 unique items from:
 - Berry
 - Mocha
 - Pumpkin Spice
-- Vanilla
-- Rhubarb and Custard
-- Toffee
