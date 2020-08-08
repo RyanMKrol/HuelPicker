@@ -6,7 +6,6 @@ export const FLAVOURS = [
   'Chocolate',
   'Gingerbread',
   'Chocolate Cherry',
-  'Mint-Chocolate',
   'Berry',
   'Mocha',
   'Pumpkin Spice',
