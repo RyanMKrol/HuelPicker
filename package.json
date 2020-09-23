@@ -7,8 +7,7 @@
     "build": "npm run lint && ./node_modules/.bin/babel src --out-dir build && shx rm -rf build/templates && shx cp -r src/templates build",
     "lint": "eslint src/ --ext .js",
     "start": "npm run-script build && node build/app.js",
-    "updateReadme": "npm run-script build && node build/scripts/updateReadme.js",
-    "deploy": "sudo ./node_modules/noodle-deploy/build/index.js -p HuelPicker -t build/app.js"
+    "updateReadme": "npm run-script build && node build/scripts/updateReadme.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
